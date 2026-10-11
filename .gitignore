@@ -1,0 +1,22 @@
+# Generated output and process state
+/dist/
+/.hikmah-build.lock/
+/.hikmah-stage-*/
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.coverage
+coverage/
+.env
+.env.*
+*.log
+.DS_Store
+._*
+__MACOSX/
+Thumbs.db
+.claude/
+.idea/
+.vscode/
+/tmp/
+/scratch/

@@ -1,0 +1,15 @@
+{
+  "description": "Hikmah: Decision deliberation through 99 source-grounded DMG analytical lenses: independent positions, direct cross-examination, and a dissent-preserving recommendation. No divine representation or religious authority.",
+  "name": "devsolux-hikmah",
+  "owner": {
+    "name": "devsolux",
+    "url": "https://github.com/devsolux"
+  },
+  "plugins": [
+    {
+      "description": "Decision deliberation through 99 source-grounded DMG analytical lenses: independent positions, direct cross-examination, and a dissent-preserving recommendation. No divine representation or religious authority.",
+      "name": "hikmah",
+      "source": "./plugins/hikmah"
+    }
+  ]
+}

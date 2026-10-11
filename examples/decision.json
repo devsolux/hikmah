@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "decision": "Should a community support team keep its current intake process or pilot a need-based triage process?",
+  "constraints": [
+    "Do not withdraw existing essential support.",
+    "Use only consented, minimally necessary information.",
+    "Keep a reversible pilot and an accountable human owner."
+  ],
+  "evidence": [
+    {
+      "id": "E1",
+      "kind": "observation",
+      "source": "Fictional example for software tests; not a real observation.",
+      "content": "In this invented scenario, some time-sensitive support requests wait behind routine requests."
+    },
+    {
+      "id": "E2",
+      "kind": "value",
+      "source": "Explicit value in this fictional decision brief.",
+      "content": "People with equivalent need should receive a comparable opportunity for timely help."
+    },
+    {
+      "id": "E3",
+      "kind": "unknown",
+      "source": "Not supplied in the example.",
+      "content": "The actual request volumes, staff capacity, and false-priority rate are unknown."
+    }
+  ],
+  "reversibility": "A limited pilot may return to the current process; preserve essential support and records throughout.",
+  "deadline": "Unknown; the responsible owner must set an appropriate review point before any real execution.",
+  "options": [
+    {
+      "id": "keep",
+      "label": "Keep the current process while gathering missing evidence."
+    },
+    {
+      "id": "pilot",
+      "label": "Run a bounded, reversible need-based triage pilot after its safeguards are specified."
+    }
+  ]
+}

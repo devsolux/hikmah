@@ -1,0 +1,242 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "assumptions": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "blind_spot": {
+      "type": "string"
+    },
+    "catalog_sha256": {
+      "type": "string"
+    },
+    "challenge": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "assessment": {
+              "enum": [
+                "disagree",
+                "qualify",
+                "no-material-disagreement"
+              ],
+              "type": "string"
+            },
+            "disagreement_kind": {
+              "enum": [
+                "evidence",
+                "assumption",
+                "value",
+                "constraint",
+                "forecast",
+                "implementation",
+                "framing",
+                "stress-test"
+              ],
+              "type": "string"
+            },
+            "reason": {
+              "type": "string"
+            },
+            "relation_id": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "resolution_test": {
+              "type": "string"
+            },
+            "target_claim": {
+              "type": "string"
+            },
+            "target_round": {
+              "enum": [
+                1
+              ],
+              "type": "integer"
+            },
+            "target_seat": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "target_seat",
+            "target_round",
+            "relation_id",
+            "target_claim",
+            "assessment",
+            "disagreement_kind",
+            "reason",
+            "resolution_test"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "challenge_responses": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "challenge_id": {
+            "type": "string"
+          },
+          "disposition": {
+            "enum": [
+              "accepted",
+              "rebutted",
+              "unresolved"
+            ],
+            "type": "string"
+          },
+          "evidence_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "rationale": {
+            "type": "string"
+          },
+          "remaining_test": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "challenge_id",
+          "disposition",
+          "rationale",
+          "evidence_ids",
+          "remaining_test"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "confidence": {
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "type": "string"
+    },
+    "confidence_reason": {
+      "type": "string"
+    },
+    "dissent": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "evidence_ids": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "kill_criteria": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "method_reference_ids": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "next_action": {
+      "type": "string"
+    },
+    "persona_sha256": {
+      "type": "string"
+    },
+    "position_change": {
+      "type": "string"
+    },
+    "product": {
+      "enum": [
+        "hikmah"
+      ],
+      "type": "string"
+    },
+    "rationale": {
+      "type": "string"
+    },
+    "request_sha256": {
+      "type": "string"
+    },
+    "round": {
+      "enum": [
+        1,
+        2,
+        3
+      ],
+      "type": "integer"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "schema_version": {
+      "enum": [
+        1
+      ],
+      "type": "integer"
+    },
+    "seat_id": {
+      "type": "string"
+    },
+    "snapshot_id": {
+      "type": "string"
+    },
+    "stance": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "uncertainties": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "run_id",
+    "snapshot_id",
+    "catalog_sha256",
+    "persona_sha256",
+    "request_sha256",
+    "seat_id",
+    "rationale",
+    "blind_spot",
+    "confidence_reason",
+    "position_change",
+    "next_action",
+    "evidence_ids",
+    "method_reference_ids",
+    "assumptions",
+    "uncertainties",
+    "dissent",
+    "kill_criteria",
+    "product",
+    "schema_version",
+    "round",
+    "stance",
+    "confidence",
+    "challenge",
+    "challenge_responses"
+  ],
+  "type": "object"
+}

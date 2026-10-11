@@ -1,0 +1,14 @@
+{
+  "agent": "hikmah",
+  "agent_count": 1,
+  "contribution_schema_version": 1,
+  "display_name": "Hikmah",
+  "host": "universal",
+  "name": "hikmah",
+  "persona_count": 99,
+  "protocol": "blind-first-neighborhood-review-final",
+  "schema_version": 1,
+  "source_group_count": 1,
+  "source_sha256": "c27b259a1318a0d7c2f380c33460cffb8245c9b5eb15428e2a8243e49284b9e9",
+  "version": "1.0.0"
+}

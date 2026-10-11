@@ -1,0 +1,20 @@
+{
+  "interface": {
+    "displayName": "Hikmah"
+  },
+  "name": "devsolux-hikmah",
+  "plugins": [
+    {
+      "category": "Productivity",
+      "name": "hikmah",
+      "policy": {
+        "authentication": "ON_INSTALL",
+        "installation": "AVAILABLE"
+      },
+      "source": {
+        "path": "./plugins/hikmah",
+        "source": "local"
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "name": "hikmah",
+  "display_name": "Hikmah",
+  "version": "1.0.0",
+  "description": "Decision deliberation through 99 source-grounded DMG analytical lenses: independent positions, direct cross-examination, and a dissent-preserving recommendation. No divine representation or religious authority.",
+  "author": {
+    "name": "devsolux",
+    "url": "https://github.com/devsolux"
+  },
+  "repository": "https://github.com/devsolux/hikmah",
+  "marketplace": "devsolux-hikmah",
+  "license": "MIT",
+  "supported_hosts": [
+    "claude",
+    "chatgpt"
+  ],
+  "keywords": [
+    "decision-support",
+    "deliberation",
+    "analytical-lenses",
+    "provenance",
+    "skills"
+  ]
+}
